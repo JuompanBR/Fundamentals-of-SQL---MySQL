@@ -28,5 +28,8 @@ FROM ((Orders INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID) 
 -- Outer joins
 SELECT Orders.OrderID, Customer.CustomerID, Customer;
 
+-- Ordering by default is ascending order
+SELECT * FROM Products ORDER BY 'Price' DESC;
+
 
 

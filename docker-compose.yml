@@ -1,0 +1,17 @@
+version: '3.8'
+
+# Generate a mysql container
+services:
+  mysql:
+    image: mysql:8.0
+    restart: always
+    env_file:
+      - variables.env
+    ports:
+      - 3306:3306
+    volumes:
+      - mysql_volume:/var/lib/mysql
+
+volumes:
+  mysql_volume:
+  
