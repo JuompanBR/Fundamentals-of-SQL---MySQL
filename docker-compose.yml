@@ -1,9 +1,8 @@
 version: '3.8'
 
-# Generate a mysql container
 services:
   mysql:
-    image: mysql:8.0
+    image: mysql:9.2.0
     restart: always
     env_file:
       - variables.env

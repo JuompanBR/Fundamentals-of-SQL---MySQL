@@ -1,4 +1,4 @@
-PROJECT_NAME=tutorial_on_sql
+PROJECT_NAME = tutorial_on_sql
 
 up:
 	docker-compose --project-name $(PROJECT_NAME) up -d
@@ -8,6 +8,9 @@ root:
 
 build:
 	docker-compose --project-name $(PROJECT_NAME) build
+
+start:
+	docker-compose --project-name $(PROJECT_NAME) up -d
 
 restart: build up
 
